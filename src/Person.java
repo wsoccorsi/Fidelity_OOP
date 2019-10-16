@@ -1,13 +1,12 @@
 public abstract class Person {
     private String name;
-    private Bank bank;
 
-    public Person(String nam) {
+    public Person(String name) {
         this.name = name;
     }
 
-    Bank getBank(){
-        return this.bank;
+    String getName(){
+        return this.name;
     }
 
 }

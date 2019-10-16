@@ -13,9 +13,7 @@ public class Bank {
 
     public void setBalance(double amount){ this.balance = amount; }
 
-    public void withdrawl(double amount){
-        this.setBalance(this.getBalance() - amount);
-    }
+    public void withdrawl(double amount) { this.setBalance(this.getBalance() - amount); }
 
 
 
