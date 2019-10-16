@@ -5,8 +5,10 @@ public abstract class Person {
         this.name = name;
     }
 
-    String getName(){
+    public String getName(){
         return this.name;
     }
+
+    public abstract String speak();
 
 }

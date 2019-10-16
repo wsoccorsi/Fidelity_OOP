@@ -9,6 +9,10 @@ public class FinancialService {
         this.balance = balance;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     public double getBalance(){
         return this.balance;
     }

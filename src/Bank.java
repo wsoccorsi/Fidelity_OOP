@@ -15,8 +15,7 @@ public class Bank {
 
     public void withdrawlFromBank(double amount) { this.balance = this.balance - amount; }
 
-    public double getBankBalance(){ return this.balance; }
-
+    public String getName() {return this.name; };
 
 
 

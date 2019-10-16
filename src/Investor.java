@@ -43,4 +43,10 @@ public class Investor extends Person {
 
 
     }
+
+    public String speak(){
+        return "Hi my name is " + this.getName() + "I have " + this.getBank().getBalance() +
+                "$ in my " + this.getBank().getName() + " bank account and " + this.getFS().getBalance() + "$ in my " +
+                this.getFS().getName() + " account";
+    }
 }
