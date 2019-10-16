@@ -7,4 +7,7 @@ public class Investor extends Person {
         this.bank = bank;
     }
 
+    public void withdrawl(double amount) { bank.setBalance(bank.getBalance() - amount); }
+
+    public double getBalance(){ return this.bank.getBalance(); }
 }
