@@ -9,14 +9,11 @@ public class Investor extends Person {
         this.fs = fs;
     }
 
-    public Bank getBank(){
-        return this.bank;
-    }
+    public Bank getBank(){ return this.bank; }
 
-    public FinancialService getFS(){
-        return this.fs;
-    }
+    public FinancialService getFS(){ return this.fs; }
 
+    //abstraction
     public String transferMoneyToFS(double amount) {
 
         if (this.bank.getBalance() - amount < 0){
@@ -29,7 +26,7 @@ public class Investor extends Person {
 
 
     }
-
+    //abstraction
     public String transferMoneyToBank(double amount) {
 
         if (this.fs.getBalance() - amount < 0) {
@@ -45,7 +42,7 @@ public class Investor extends Person {
     }
 
     public String speak(){
-        return "Hi my name is " + this.getName() + "I have " + this.getBank().getBalance() +
+        return "Hi my name is " + this.getName() + ", I have " + this.getBank().getBalance() +
                 "$ in my " + this.getBank().getName() + " bank account and " + this.getFS().getBalance() + "$ in my " +
                 this.getFS().getName() + " account";
     }

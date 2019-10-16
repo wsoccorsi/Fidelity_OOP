@@ -9,18 +9,11 @@ public class FinancialService {
         this.balance = balance;
     }
 
-    public String getName(){
-        return this.name;
-    }
+    public String getName(){ return this.name; }
 
-    public double getBalance(){
-        return this.balance;
-    }
+    public double getBalance(){ return this.balance; }
 
-    public void setBalance(double balance){
-        this.balance = balance;
-    }
-
+    public void setBalance(double balance){ this.balance = balance; }
 
     public void withdrawlFromFS(double amount) { this.balance = this.balance - amount; }
 
