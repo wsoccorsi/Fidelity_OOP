@@ -1,13 +1,16 @@
 public class Investor extends Person {
 
     private Bank bank; //added functionality
+    private FinancialService fs;
 
     public Investor(String name, Bank bank) {
-        super(name);
+        super(name); //call the super class constructor :))
         this.bank = bank;
     }
 
-    public void withdrawl(double amount) { bank.setBalance(bank.getBalance() - amount); }
+    public void withdrawlFromBank(double amount) { bank.setBalance(bank.getBalance() - amount); }
 
-    public double getBalance(){ return this.bank.getBalance(); }
+    public double getBankBalance(){ return this.bank.getBalance(); }
+
+
 }

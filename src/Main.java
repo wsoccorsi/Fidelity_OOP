@@ -21,8 +21,8 @@ public class Main {
         System.out.println(investor.getName()); // an example of using the inherited get name
 
         //withdrawl 200
-        investor.withdrawl(200);
-        System.out.println(investor.getBalance());
+        investor.withdrawlFromBank(200);
+        System.out.println(investor.getBankBalance());
 
     }
 }
