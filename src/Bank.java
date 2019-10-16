@@ -13,6 +13,10 @@ public class Bank {
 
     public void setBalance(double amount){ this.balance = amount; }
 
+    public void withdrawlFromBank(double amount) { this.balance = this.balance - amount; }
+
+    public double getBankBalance(){ return this.balance; }
+
 
 
 
